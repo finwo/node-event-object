@@ -23,6 +23,7 @@
       listeners[name].push(callback);
       return sourceObject;
     };
+    return sourceObject;
   };
   
   if(typeof define == 'function' && define.amd) {
