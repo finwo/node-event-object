@@ -1,4 +1,5 @@
 (function(exports) {
+  
   exports.eventObject = function(sourceObject) {
     var listeners = {};
     sourceObject = sourceObject || {};
@@ -23,4 +24,11 @@
       return sourceObject;
     };
   };
+  
+  if(typeof define == 'function' && define.amd) {
+    define('event-object', function() {
+      return exports.eventObject;
+    })
+  }
+  
 })(typeof exports === 'object' ? exports : this);
