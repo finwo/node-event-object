@@ -1,6 +1,6 @@
 {
   "name": "event-object",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Attach events to any object",
   "main": "dist/event-object.js",
   "scripts": {
